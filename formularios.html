@@ -30,21 +30,68 @@
         <a href="#">Ingresar</a>
       </nav>
 
-      <main class="page-main">
-        <!-- TODO: envolver el formulario en <form method="post" action="#"> -->
-        <!-- TODO: título «Añadí tu super!» y texto guía de la maqueta -->
-        <!-- TODO: campos Nombre (*), Especie (*), Fecha, Foto, Descripción -->
-        <!-- TODO: fieldset Poderes con 4 checkboxes -->
-        <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
-        <!-- TODO: botón <button type="submit">Añadir</button> -->
-        <p class="placeholder-copy">
-          Reemplazá este párrafo por el formulario completo respetando la jerarquía del diseño de
-          referencia.
-        </p>
-      </main>
+    <main class="page-main">
+  <form class="hero-form" method="post" action="#">
+<h1>Añadí tu super!</h1>
+<p>Agregá tu personaje favorito completando las opciones.</p>
+
+<div class="form-grid">
+  <div class="campo">
+    <label for="nombre">*Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+  </div>
+
+  <div class="campo">
+    <label for="especie">*Especie</label>
+    <select id="especie" name="especie" required>
+      <option value="">Especie</option>
+      <option value="humano">Humano</option>
+      <option value="alien">Alien</option>
+      <option value="metahumano">Metahumano</option>
+      <option value="androide">Androide</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" name="fecha" />
+  </div>
+
+  <div class="campo">
+    <label for="foto">Agregar Foto</label>
+    <input type="file" id="foto" name="foto" accept="image/*" />
+  </div>
+
+  <div class="campo descripcion-campo">
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
+  </div>
+
+  <div class="opciones-campo">
+    <fieldset>
+      <legend>Poderes</legend>
+
+      <label><input type="checkbox" name="poderes" value="volar" /> Volar</label>
+      <label><input type="checkbox" name="poderes" value="superinteligencia" /> SuperInteligencia</label>
+      <label><input type="checkbox" name="poderes" value="vista-rayo-laser" /> Vista de rayo láser</label>
+      <label><input type="checkbox" name="poderes" value="billetera-gorda" /> Billetera gorda</label>
+    </fieldset>
+
+    <fieldset class="tipo-personaje">
+      <legend>Tipo de personaje</legend>
+
+      <label><input type="radio" name="tipo-personaje" value="heroe" /> Héroe / Heroina</label>
+      <label><input type="radio" name="tipo-personaje" value="villano" /> Villano / Villana</label>
+    </fieldset>
+  </div>
+</div>
+
+<button type="submit">Añadir</button>
+</form>
+</main>
 
       <footer class="site-footer">
-        <p>Todos los derechos reservados - [TU NOMBRE Y APELLIDO]</p>
+        <p>Todos los derechos reservados - Renzo Hernan Torres </p>
         <a href="https://github.com/" class="footer-github">GitHub</a>
       </footer>
     </div>
