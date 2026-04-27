@@ -32,70 +32,61 @@
 
     <main class="page-main">
   <form class="hero-form" method="post" action="#">
-  <h1>Añadí tu super!</h1>
-  <p>Agregá tu personaje favorito completando las opciones.</p>
+<h1>Añadí tu super!</h1>
+<p>Agregá tu personaje favorito completando las opciones.</p>
 
-  <label for="nombre">Nombre *</label>
-  <input type="text" id="nombre" name="nombre" required />
-  
+<div class="form-grid">
+  <div class="campo">
+    <label for="nombre">*Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+  </div>
 
-  <label for="especie">Especie *</label>
-  <select id="especie" name="especie" required>
-    <option value="">Especie</option>
-    <option value="humano">Humano</option>
-    <option value="alien">Alien</option>
-    <option value="metahumano">Metahumano</option>
-    <option value="androide">Androide</option>
-  </select>
+  <div class="campo">
+    <label for="especie">*Especie</label>
+    <select id="especie" name="especie" required>
+      <option value="">Especie</option>
+      <option value="humano">Humano</option>
+      <option value="alien">Alien</option>
+      <option value="metahumano">Metahumano</option>
+      <option value="androide">Androide</option>
+    </select>
+  </div>
 
-  <label for="fecha">Fecha</label>
-  <input type="date" id="fecha" name="fecha" />
+  <div class="campo">
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" name="fecha" />
+  </div>
 
-  <label for="foto">Foto</label>
-  <input type="file" id="foto" name="foto" accept="image/*" />
+  <div class="campo">
+    <label for="foto">Agregar Foto</label>
+    <input type="file" id="foto" name="foto" accept="image/*" />
+  </div>
 
-  <label for="descripcion">Descripción</label>
-  <textarea id="descripcion" name="descripcion"></textarea>
+  <div class="campo descripcion-campo">
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
+  </div>
 
-  <fieldset>
-  <legend>Poderes</legend>
+  <div class="opciones-campo">
+    <fieldset>
+      <legend>Poderes</legend>
 
-  <label>
-    <input type="checkbox" name="poderes" value="volar" />
-    Volar
-  </label>
+      <label><input type="checkbox" name="poderes" value="volar" /> Volar</label>
+      <label><input type="checkbox" name="poderes" value="superinteligencia" /> SuperInteligencia</label>
+      <label><input type="checkbox" name="poderes" value="vista-rayo-laser" /> Vista de rayo láser</label>
+      <label><input type="checkbox" name="poderes" value="billetera-gorda" /> Billetera gorda</label>
+    </fieldset>
 
-  <label>
-    <input type="checkbox" name="poderes" value="superinteligencia" />
-    SuperInteligencia
-  </label>
+    <fieldset class="tipo-personaje">
+      <legend>Tipo de personaje</legend>
 
-  <label>
-    <input type="checkbox" name="poderes" value="vista-rayo-laser" />
-    Vista de rayo láser
-  </label>
+      <label><input type="radio" name="tipo-personaje" value="heroe" /> Héroe / Heroina</label>
+      <label><input type="radio" name="tipo-personaje" value="villano" /> Villano / Villana</label>
+    </fieldset>
+  </div>
+</div>
 
-  <label>
-    <input type="checkbox" name="poderes" value="billetera-gorda" />
-    Billetera gorda
-  </label>
-</fieldset>
-
-<fieldset>
-  <legend>Tipo de personaje</legend>
-
-  <label>
-    <input type="radio" name="tipo-personaje" value="heroe" />
-    Héroe / Heroina
-  </label>
-
-  <label>
-    <input type="radio" name="tipo-personaje" value="villano" />
-    Villano / Villana
-  </label>
-</fieldset>
-
-  <button type="submit">Añadir</button>
+<button type="submit">Añadir</button>
 </form>
 </main>
 

@@ -304,3 +304,32 @@ a {
   font-weight: 700;
   cursor: pointer;
 }
+
+.form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.descripcion-campo {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+
+.opciones-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tipo-personaje {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  padding-top: 18px;
+}
