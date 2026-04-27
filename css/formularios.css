@@ -177,3 +177,130 @@ a {
   font-weight: 700;
   cursor: pointer;
 }
+
+.hero-form button:hover {
+  background-color: #18b89d;
+}
+
+.hero-form input:focus,
+.hero-form select:focus,
+.hero-form textarea:focus {
+  outline: 3px solid #1cd1b0;
+}
+
+.main-nav a:hover,
+.footer-github:hover {
+  text-decoration: underline;
+}
+
+.page-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  background-color: #f3f3f3;
+}
+
+.hero-form {
+  width: 100%;
+  max-width: 900px;
+  background-color: #00669f;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 22px 56px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.hero-form h1,
+.hero-form p {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin: 0;
+}
+
+.hero-form h1 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.hero-form p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.hero-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.hero-form input,
+.hero-form select,
+.hero-form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+.hero-form input,
+.hero-form select {
+  height: 48px;
+}
+
+.hero-form textarea {
+  height: 180px;
+  resize: none;
+}
+
+.hero-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.hero-form legend {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hero-form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.hero-form input[type="checkbox"],
+.hero-form input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.hero-form fieldset:nth-of-type(2) {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  padding-top: 14px;
+  margin-top: 10px;
+}
+
+.hero-form button {
+  grid-column: 1 / 3;
+  justify-self: center;
+  background-color: #1cd1b0;
+  color: #000000;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 90px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
