@@ -32,23 +32,32 @@
 
     <main class="page-main">
   <form class="hero-form" method="post" action="#">
-    <h1>Añadí tu super!</h1>
-    <p>Agregá tu personaje favorito completando el formulario.</p>
+  <h1>Añadí tu super!</h1>
+  <p>Agregá tu personaje favorito completando el formulario.</p>
 
-    <label for="nombre">Nombre *</label>
-    <input type="text" id="nombre" name="nombre" required />
+  <label for="nombre">Nombre *</label>
+  <input type="text" id="nombre" name="nombre" required />
 
-    <label for="especie">Especie *</label>
-    <select id="especie" name="especie" required>
-      <option value="">Seleccioná una especie</option>
-      <option value="humano">Humano</option>
-      <option value="alien">Alien</option>
-      <option value="metahumano">Metahumano</option>
-      <option value="androide">Androide</option>
-    </select>
+  <label for="especie">Especie *</label>
+  <select id="especie" name="especie" required>
+    <option value="">Seleccioná una especie</option>
+    <option value="humano">Humano</option>
+    <option value="alien">Alien</option>
+    <option value="metahumano">Metahumano</option>
+    <option value="androide">Androide</option>
+  </select>
 
-    <button type="submit">Añadir</button>
-  </form>
+  <label for="fecha">Fecha</label>
+  <input type="date" id="fecha" name="fecha" />
+
+  <label for="foto">Foto</label>
+  <input type="file" id="foto" name="foto" accept="image/*" />
+
+  <label for="descripcion">Descripción</label>
+  <textarea id="descripcion" name="descripcion"></textarea>
+
+  <button type="submit">Añadir</button>
+</form>
 </main>
 
       <footer class="site-footer">
